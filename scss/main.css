@@ -1,1 +1,23 @@
-/*# sourceMappingURL=main.css.map */
+@font-face {
+  font-family: "Montserrat-Thin";
+  src: url("../font/MontserratThin.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("../font/MontserratRegular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Montserrat-Medium";
+  src: url("../font/MontserratMedium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url("../font/MontserratBold.ttf") format("truetype");
+}
+body {
+  font-family: "Montserrat-Regular";
+  background-image: url(../img/bg.png);
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: 60vmax;
+}/*# sourceMappingURL=main.css.map */

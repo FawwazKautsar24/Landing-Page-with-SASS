@@ -24,6 +24,15 @@ $secondaryColor: #aabde6;
 $tertiaryColor: #c5abdc;
 $textColor: #393c43;
 
+@mixin tombol{
+    display: inline-block;
+    color: white;
+    background-color: $primaryColor;
+    border-radius: 2em;
+    padding: 0.5em 2em;
+    text-decoration: none;
+}
+
 body{
     font-family: 'Montserrat-Regular';
     &::before{
@@ -71,12 +80,7 @@ body{
                     }
                 }
                 .sign-up-button{
-                    background-color: $primaryColor;
-                    color: white;
-                    border-radius: 2em;
-                    border: 0;
-                    padding-left: 1.5em;
-                    padding-right: 1.5em;
+                    @include tombol;
                 }
             }
         }
@@ -111,11 +115,15 @@ body{
         margin-top: 2em;
     }
     a{
-        display: inline-block;
-        color: white;
-        background-color: $primaryColor;
-        border-radius: 2em;
-        padding: 0.5em 2em;
-        text-decoration: none;
+        margin: 2.2em 0;
+        @include tombol;
+        border: 1px solid transparent;
+        transition: 0.5s ease;
+
+        &:hover{
+            color: $primaryColor;
+            border: 1px solid $primaryColor;
+            background-color: transparent;
+        }
     }
 }
